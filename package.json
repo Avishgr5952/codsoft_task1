@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:all": "tsx scripts/start-all.ts",
     "db:start": "tsx scripts/pg-server.ts",
+
     "db:push": "prisma db push",
     "build": "prisma generate && next build",
     "start": "next start",

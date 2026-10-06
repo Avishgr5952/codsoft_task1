@@ -173,8 +173,9 @@ cp .env.example .env
 ```
 Ensure `.env` contains:
 ```env
-DATABASE_URL="postgresql://postgres:postgres@127.0.0.1:5432/edumanage?sslmode=disable"
-DIRECT_URL="postgresql://postgres:postgres@127.0.0.1:5432/edumanage?sslmode=disable"
+DATABASE_URL="postgresql://postgres:password@127.0.0.1:5432/edumanage?schema=public"
+DIRECT_URL="postgresql://postgres:password@127.0.0.1:5432/edumanage?schema=public"
+
 AUTH_SECRET="super-secret-jwt-key-for-edumanage-system-2026"
 NEXT_PUBLIC_APP_URL="http://localhost:3000"
 ```
